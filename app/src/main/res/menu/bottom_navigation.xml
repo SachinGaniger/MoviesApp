@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/moviesFragment"
+        android:icon="@drawable/ic_outline_movie"
+        android:iconTint="@color/textColor"
+        android:title="Movies"/>
+
+    <item
+        android:id="@+id/tvShowsFragment"
+        android:icon="@drawable/ic_outline_tv"
+        android:iconTint="@color/textColor"
+        android:title="Tv Shows"/>
+
+    <item
+        android:id="@+id/watchListFragment"
+        android:icon="@drawable/ic_outline_video_library"
+        android:iconTint="@color/textColor"
+        android:title="Watchlist"/>
+
+</menu>

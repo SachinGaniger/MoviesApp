@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".View.Fragments.TvShowsFragment">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_title_only"
+        />
+
+    <TextView
+        android:id="@+id/tv_popularTvShows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Popular Shows"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/textColor"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_popularTvShows"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/individual_movie_adapter_layout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
